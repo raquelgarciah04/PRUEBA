@@ -1,0 +1,63 @@
+-- Insertar datos en la tabla clients
+INSERT INTO clients (client_name, industry, contact_info) VALUES
+('Tech Solutions Inc.', 'Tecnología', 'contacto@techsolutions.com'),
+('Green Energy Corp.', 'Energía', 'info@greenenergy.com'),
+('Global Retail', 'Comercio', 'contact@globalretail.com'),
+('Health Plus', 'Salud', 'support@healthplus.com'),
+('EduFuture', 'Educación', 'hello@edufuture.org'),
+('BuildRight', 'Construcción', 'contact@buildright.com'),
+('FoodDelight', 'Alimentación', 'orders@fooddelight.com'),
+('AutoMasters', 'Automoción', 'service@automasters.com'),
+('Fashion Forward', 'Moda', 'customers@fashionforward.com'),
+('BankSecure', 'Finanzas', 'clients@banksecure.com');
+
+-- Insertar datos en la tabla interactions
+INSERT INTO interactions (client_id, date, interaction_type) VALUES
+(1, '2023-01-15', 'Llamada telefónica'),
+(1, '2023-02-20', 'Reunión presencial'),
+(1, '2023-03-10', 'Email'),
+(2, '2023-01-05', 'Videollamada'),
+(2, '2023-02-18', 'Llamada telefónica'),
+(2, '2023-03-22', 'Reunión presencial'),
+(3, '2023-01-30', 'Email'),
+(3, '2023-02-15', 'Llamada telefónica'),
+(3, '2023-03-05', 'Videollamada'),
+(4, '2023-01-10', 'Reunión presencial'),
+(4, '2023-02-25', 'Email'),
+(4, '2023-03-18', 'Llamada telefónica'),
+(5, '2023-01-20', 'Videollamada'),
+(5, '2023-02-10', 'Reunión presencial'),
+(5, '2023-03-30', 'Email'),
+(6, '2023-01-25', 'Llamada telefónica'),
+(6, '2023-02-05', 'Email'),
+(6, '2023-03-15', 'Videollamada'),
+(7, '2023-01-12', 'Reunión presencial'),
+(7, '2023-02-22', 'Llamada telefónica'),
+(7, '2023-03-08', 'Email'),
+(8, '2023-01-18', 'Videollamada'),
+(8, '2023-02-28', 'Reunión presencial'),
+(8, '2023-03-20', 'Llamada telefónica'),
+(9, '2023-01-08', 'Email'),
+(9, '2023-02-15', 'Videollamada'),
+(9, '2023-03-25', 'Reunión presencial'),
+(10, '2023-01-22', 'Llamada telefónica'),
+(10, '2023-02-10', 'Email'),
+(10, '2023-03-12', 'Videollamada');
+
+-- Insertar datos en la tabla sales
+INSERT INTO sales (client_id, sale_amount, sale_date) VALUES
+(1, 15000.00, '2023-01-20'),
+(1, 25000.00, '2023-02-25'),
+(1, 18000.00, '2023-03-15'),
+(2, 32000.00, '2023-01-10'),
+(2, 28000.00, '2023-02-20'),
+(3, 12000.00, '2023-01-31'),
+(3, 15000.00, '2023-03-10'),
+(4, 22000.00, '2023-02-28'),
+(4, 19000.00, '2023-03-20'),
+(5, 17000.00, '2023-01-25'),
+(6, 21000.00, '2023-02-15'),
+(7, 14000.00, '2023-03-10'),
+(8, 23000.00, '2023-01-20'),
+(9, 16000.00, '2023-02-20'),
+(10, 27000.00, '2023-03-05');
